@@ -11,392 +11,193 @@
     <script src="js/material.js"></script>
     <script src="js/jquery.js"></script>
     <script src="js/slide.js"></script>
-    <style>
-        #mysearchtable {
-            width: 100%;
-            height: 100px;
-        }
-        #mybigcards{
-          width: 100%;
-          margin-top:0.5em;
-        }
-        <!-- Wide card with share menu button -->
-
-        .demo-card-wide.mdl-card {
-          width: 512px;
-        }
-        .demo-card-wide > .mdl-card__title {
-          color: #fff;
-          height: 176px;
-          background: url('img/welcome_card.jpg') center / cover;
-        }
-        .demo-card-wide > .mdl-card__menu {
-          color: #fff;
-        }
-        .demo-card-square.mdl-card {
-          width: 320px;
-          height: 320px;
-        }
-        .demo-card-square > .mdl-card__title {
-          color: #fff;
-          background:
-            url('img/dog.png') bottom right 15% no-repeat #46B6AC;
-        }
-        #mypagelittlecards{
-          width: 100%;
-          margin-bottom: 0.5em;
-        }
-        #mytable{
-          width: 100%;
-          margin-bottom: 0.5em;
-        }
-        #pagebar{
-          width: 100%;
-          background: rgb(254, 87, 34);
-          text-align: center;
-          font-size: 2em;
-          font-weight: bold;
-          color: #fff;
-          padding: 0.5em;
-        }
-    </style>
+    <link rel="stylesheet" href="css/mian.css">
+    <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="css/hobby.css">
 </head>
 
 <body>
-    <!-- Always shows a header, even in smaller screens. -->
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-        <header class="mdl-layout__header">
-            <div class="mdl-layout__header-row">
-                <!-- Title -->
-                <span class="mdl-layout-title">信工农贸网</span>
-                <!-- Add spacer, to align navigation to the right -->
-                <div class="mdl-layout-spacer"></div>
-                <!-- Navigation. We hide it in small screens. -->
-                <nav class="mdl-navigation mdl-layout--large-screen-only">
-                    <a class="mdl-navigation__link" href="">关于作者</a>
-                    <a class="mdl-navigation__link" href="">GitHub</a>
+  <div class="demo-layout-transparent mdl-layout mdl-js-layout">
+      <header class="mdl-layout__header mdl-layout__header--transparent">
+          <div class="mdl-layout__header-row">
+              <!-- Title -->
+              <span class="mdl-layout-title">信工农贸网</span>
+              <!-- Add spacer, to align navigation to the right -->
+              <div class="mdl-layout-spacer"></div>
+              <!-- Navigation -->
+              <nav class="mdl-navigation">
 
-                </nav>
-            </div>
-        </header>
-        <div class="mdl-layout__drawer">
-            <span class="mdl-layout-title">信工农贸网</span>
-            <nav class="mdl-navigation">
-                <a class="mdl-navigation__link" href="index.html">网站主页</a>
-                <a class="mdl-navigation__link" href="wodeguanzhu.html">我的关注</a>
-                <a class="mdl-navigation__link" href="shuiguoshucai.html">水果蔬菜</a>
-                <a class="mdl-navigation__link" href="xumushuichan.html">畜牧水产</a>
-                <a class="mdl-navigation__link" href="liangyoumimian.html">粮油米面</a>
-                <a class="mdl-navigation__link" href="nongfujiagong.html">农副加工</a>
-                <a class="mdl-navigation__link" href="miaomuhuacao.html">苗木花草</a>
-                <a class="mdl-navigation__link" href="nongzinongji.html">农资农机</a>
-                <a class="mdl-navigation__link" href="zhongyaocai.html">中药材</a>
-            </nav>
-        </div>
+                  <a class="mdl-navigation__link" href="https://github.com/icemax1997/jqueryhomework">GitHub</a>
+              </nav>
+          </div>
+      </header>
+      <div class="mdl-layout__drawer">
+          <span class="mdl-layout-title">侧滑导航</span>
+          <nav class="mdl-navigation">
+              <a class="mdl-navigation__link" href="index.html">网站主页</a>
+              <a class="mdl-navigation__link" href="wodeguanzhu.html">我的关注</a>
+              <a class="mdl-navigation__link" href="shuiguoshucai.html">水果蔬菜</a>
+              <a class="mdl-navigation__link" href="xumushuichan.html">畜牧水产</a>
+              <a class="mdl-navigation__link" href="liangyoumimian.html">粮油米面</a>
+              <a class="mdl-navigation__link" href="nongfujiagong.html">农副加工</a>
+              <a class="mdl-navigation__link" href="miaomuhuacao.html">苗木花草</a>
+              <a class="mdl-navigation__link" href="nongzinongji.html">农资农机</a>
+              <a class="mdl-navigation__link" href="zhongyaocai.html">中药材</a>
+          </nav>
+      </div>
         <main class="mdl-layout__content">
-            xxx
-        </main>
-        <div class="page-content">
-            <!-- Your content goes here -->
+            <div class="page-content">
+                <!-- Your content goes here -->
 
-            <div class="mdl-grid">
-              <div class="mdl-cell mdl-cell--12-col" id="pagebar">
-                 我的关注专栏
-              </div>
-                <div class="mdl-cell mdl-cell--8-col">
-                    <div class="demo-card-wide mdl-card mdl-shadow--2dp" id="mysearchtable">
-                        <div class="mdl-card__supporting-text">
-                            <form action="#">
-                                搜索：
-                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                    <input class="mdl-textfield__input" type="text" id="sample3">
-                                    <label class="mdl-textfield__label" for="sample3">Text...</label>
+                <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--12-col" id="mybanner2">
+                        我的关注<br>
+                    </div>
+                    <div class="mdl-cell mdl-cell--2-col"></div>
+                    <div class="mdl-cell mdl-cell--8-col">
+                        <div class="mdl-grid">
+                            <div class="mdl-cell mdl-cell--8-col">
+                                <div class="demo-card-wide mdl-card mdl-shadow--2dp" id="d1">
+                                    <div class="mdl-card__title" id="d1pic">
+                                        <h2 class="mdl-card__title-text">欢迎你</h2>
+                                    </div>
+                                    <div class="mdl-card__supporting-text">
+                                        近期购买:<br>
+                                        小拳拳大沙河10斤红富士新鲜苹果冰糖心水果比烟台阿克苏好吃包邮
+                                    </div>
+                                    <div class="mdl-card__actions mdl-card--border">
+                                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="fruit_details.html" class="a1">
+                                        查看详情
+                                      </a>
+                                    </div>
+                                    <div class="mdl-card__menu">
+                                        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                                          <i class="material-icons">share</i>
+                                        </button>
+                                    </div>
                                 </div>
-                            </form>
+                            </div>
+                            <div class="mdl-cell mdl-cell--4-col">
+
+                                <div class="demo-card-square mdl-card mdl-shadow--2dp" id="d2">
+                                    <div class="mdl-card__title mdl-card--expand">
+                                        <h2 class="mdl-card__title-text">我的关注</h2>
+                                    </div>
+                                    <div class="mdl-card__supporting-text">
+                                        在这里你关注你感兴趣的店铺，快速获得店铺最新动态
+                                    </div>
+                                    <div class="mdl-card__actions mdl-card--border">
+                                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                    查看详情
+                                  </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--12-col">
+                                <div class="demo-card-event mdl-card mdl-shadow--2dp" id="d3">
+                                    <div class="mdl-card__title mdl-card--expand">
+                                        <h4>
+                                        “<br>
+                                        苹果蛮好的，还没吃过，不过看着挺好。而且包装很好，买了好几样很多都是分开单独装的，快递师傅也很好，送之前打了电话，开箱验货，赞，下次还会光顾<br>
+                                        ”
+                                      </h4>
+                                    </div>
+                                    <div class="mdl-card__actions mdl-card--border">
+                                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                        2017年6月3日18:25&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;订单号:1652649629
+                                      </a>
+                                        <div class="mdl-layout-spacer"></div>
+                                        <i class="material-icons">event</i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--12-col">
+                                <div class="demo-card-image mdl-card mdl-shadow--2dp" id="d3">
+                                    <div class="mdl-card__title mdl-card--expand"></div>
+                                    <div class="mdl-card__actions">
+                                        <span class="demo-card-image__filename">“胡萝卜色泽很好”</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--12-col">
+                                <div class="demo-card-event mdl-card mdl-shadow--2dp" id="d3">
+                                    <div class="mdl-card__title mdl-card--expand">
+                                        <h4>
+                                                “<br>
+                                                今天过节回家打开宝贝，很是高兴。店家小雅真的没有让我失望。买了两件都很好。
+                                                最满意的就是亲亲小雅的细心和耐心。三药打开，一根断的都没有。而且也没有坏的。
+                                                准备回家在给自已买两件。以后就长期在你家买了。同时也会介绍朋友来的。<br>
+                                                ”
+                                              </h4>
+                                    </div>
+                                    <div class="mdl-card__actions mdl-card--border">
+                                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                                2017年6月3日18:25&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;订单号:1652649629
+                                              </a>
+                                        <div class="mdl-layout-spacer"></div>
+                                        <i class="material-icons">event</i>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="mdl-card__supporting-text">
-                            地区：
-                            <!-- Flat button with ripple -->
-                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
-                              上海
-                            </button>
-                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
-                              深圳
-                            </button>
-                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
-                              香港
-                            </button>
-                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
-                              北京
-                            </button>
-                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
-                              杭州
-                            </button>
-                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
-                              四川
-                            </button>
-                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
-                              甘肃
-                            </button>
-                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
-                              云南
-                            </button>
-                        </div>
-                        <div class="mdl-card__supporting-text">
-                            特征：
-                            <!-- Flat button with ripple -->
-                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
-                              包邮
-                            </button>
-                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
-                              套餐
-                            </button>
-                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
-                              送退货运费险
-                            </button>
-                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
-                              货到付款
-                            </button>
-                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
-                              洋货
-                            </button>
-                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
-                              二手
-                            </button>
-                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
-                              正品保障
-                            </button>
-                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
-                              学生优惠
-                            </button>
-                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
-                              团购价
-                            </button>
-                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
-                              7天内退货
-                            </button>
-                        </div>
                     </div>
-                    <div class="demo-card-wide mdl-card mdl-shadow--2dp"  id="mybigcards">
-                      <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">蒙羊 羊腿4.3斤内蒙古清真生羊肉 羊肉新鲜 烧烤羊腿食材生羊腿肉</h2>
-                      </div>
-                      <div class="mdl-card__supporting-text">
-                        春游狂购 草原羔羊肉 买就送 炖肉料
-
-                      </div>
-                      <div class="mdl-card__actions mdl-card--border">
-                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                        查看详情
-                        </a>
-                      </div>
-                      <div class="mdl-card__menu">
-                        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                          <i class="material-icons">share</i>
-                        </button>
-                      </div>
-                    </div>
-                    <div class="demo-card-wide mdl-card mdl-shadow--2dp"  id="mybigcards">
-                      <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">小尾羊新鲜羊肉串200g*5包 内蒙草原生羔羊肉串 烧烤食材 50大串</h2>
-                      </div>
-                      <div class="mdl-card__supporting-text">
-
-                      这价格你懂的 仅一次 6.2号10点开抢
-                      </div>
-                      <div class="mdl-card__actions mdl-card--border">
-                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                        查看详情
-                        </a>
-                      </div>
-                      <div class="mdl-card__menu">
-                        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                          <i class="material-icons">share</i>
-                        </button>
-                      </div>
-                    </div>
-                    <div class="demo-card-wide mdl-card mdl-shadow--2dp"  id="mybigcards">
-                      <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">蒙羊 羊排2.4斤内蒙古草原生羊排新鲜羊肉烧烤食材羊肋排火锅</h2>
-                      </div>
-                      <div class="mdl-card__supporting-text">
-                        送炖肉料 春游狂购 买2送小羊排
-
-                      </div>
-                      <div class="mdl-card__actions mdl-card--border">
-                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                        查看详情
-                        </a>
-                      </div>
-                      <div class="mdl-card__menu">
-                        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                          <i class="material-icons">share</i>
-                        </button>
-                      </div>
-                    </div>
-                    <div class="demo-card-wide mdl-card mdl-shadow--2dp"  id="mybigcards">
-                      <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">新鲜羊肉 法式羊排 12骨羊排 内蒙古特产 羊排烧烤 清真羊排1000g</h2>
-                      </div>
-                      <div class="mdl-card__supporting-text">
-
-                      12骨羊排一份1000克大约12-14根之间，6个月的羔羊，口感非常嫩，适合烧烤、油煎！目前批次日期2017月4月9号，日期不断更新中
-                      </div>
-                      <div class="mdl-card__actions mdl-card--border">
-                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                        查看详情
-                        </a>
-                      </div>
-                      <div class="mdl-card__menu">
-                        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                          <i class="material-icons">share</i>
-                        </button>
-                      </div>
-                    </div>
-
 
                 </div>
-                <div class="mdl-cell mdl-cell--4-col">
-                  <table class="mdl-data-table mdl-data-table--selectable mdl-shadow--2dp" id="mytable">
-                    <thead>
-                      <tr>
-                        <th class="mdl-data-table__cell--non-numeric">品种</th>
-                        <th>产地</th>
-                        <th>价格</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="mdl-data-table__cell--non-numeric">红富士</td>
-                            <td>甘肃</td>
-                            <td>$2.90</td>
-                        </tr>
-                        <tr>
-                            <td class="mdl-data-table__cell--non-numeric">冰糖雪梨</td>
-                            <td>杭州</td>
-                            <td>$1.25</td>
-                        </tr>
-                        <tr>
-                            <td class="mdl-data-table__cell--non-numeric">甘蔗</td>
-                            <td>海南</td>
-                            <td>$2.35</td>
-                        </tr>
-                        <tr>
-                            <td class="mdl-data-table__cell--non-numeric">甘蔗</td>
-                            <td>海南</td>
-                            <td>$2.35</td>
-                        </tr>
-                        <tr>
-                            <td class="mdl-data-table__cell--non-numeric">甘蔗</td>
-                            <td>海南</td>
-                            <td>$2.35</td>
-                        </tr>
-                        <tr>
-                            <td class="mdl-data-table__cell--non-numeric">甘蔗</td>
-                            <td>海南</td>
-                            <td>$2.35</td>
-                        </tr>
-                    </tbody>
-                  </table>
-                  <div class="demo-card-square mdl-card mdl-shadow--2dp" id="mypagelittlecards">
-                      <div class="mdl-card__title mdl-card--expand">
-                          <h2 class="mdl-card__title-text">促销广告</h2>
-                      </div>
-                      <div class="mdl-card__supporting-text">
-                          买一百送一百
-                      </div>
-                      <div class="mdl-card__actions mdl-card--border">
-                          <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                            查看详情
-                          </a>
-                      </div>
-                  </div>
-                  <div class="demo-card-square mdl-card mdl-shadow--2dp" id="mypagelittlecards">
-                      <div class="mdl-card__title mdl-card--expand">
-                          <h2 class="mdl-card__title-text">促销广告</h2>
-                      </div>
-                      <div class="mdl-card__supporting-text">
-                          养生讲堂
-                      </div>
-                      <div class="mdl-card__actions mdl-card--border">
-                          <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                            查看详情
-                          </a>
-                      </div>
-                  </div>
-                  <div class="demo-card-square mdl-card mdl-shadow--2dp" id="mypagelittlecards">
-                      <div class="mdl-card__title mdl-card--expand">
-                          <h2 class="mdl-card__title-text">促销广告</h2>
-                      </div>
-                      <div class="mdl-card__supporting-text">
-                          创富展销节
-                      </div>
-                      <div class="mdl-card__actions mdl-card--border">
-                          <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                            查看详情
-                          </a>
-                      </div>
-                  </div>
-                </div>
+                <div class="mdl-cell mdl-cell--2-col"></div>
             </div>
-        </div>
-        <footer class="mdl-mega-footer">
-            <div class="mdl-mega-footer__middle-section">
+            <footer class="mdl-mega-footer">
+                <div class="mdl-mega-footer__middle-section">
 
-                <div class="mdl-mega-footer__drop-down-section">
-                    <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-                    <h1 class="mdl-mega-footer__heading">Features</h1>
-                    <ul class="mdl-mega-footer__link-list">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Terms</a></li>
-                        <li><a href="#">Partners</a></li>
-                        <li><a href="#">Updates</a></li>
-                    </ul>
+                    <div class="mdl-mega-footer__drop-down-section">
+                        <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                        <h1 class="mdl-mega-footer__heading">网站开发框架</h1>
+                        <ul class="mdl-mega-footer__link-list">
+                            <li><a href="#">Material Design</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="mdl-mega-footer__drop-down-section">
+                        <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                        <h1 class="mdl-mega-footer__heading">作者</h1>
+                        <ul class="mdl-mega-footer__link-list">
+                            <li><a href="#">16905214</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="mdl-mega-footer__drop-down-section">
+                        <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                        <h1 class="mdl-mega-footer__heading">联系方式</h1>
+                        <ul class="mdl-mega-footer__link-list">
+                            <li><a href="#">158-5829-8995</a></li>
+                            <li><a href="#">icemax@gmail.com</a></li>
+                            <li><a href="#">16905214@hdu.edu.cn</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="mdl-mega-footer__drop-down-section">
+                        <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                        <h1 class="mdl-mega-footer__heading">技术交流</h1>
+                        <ul class="mdl-mega-footer__link-list">
+                            <li><a href="#">QQ:1137574126</a></li>
+
+                        </ul>
+                    </div>
+
                 </div>
 
-                <div class="mdl-mega-footer__drop-down-section">
-                    <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-                    <h1 class="mdl-mega-footer__heading">Details</h1>
-                    <ul class="mdl-mega-footer__link-list">
-                        <li><a href="#">Specs</a></li>
-                        <li><a href="#">Tools</a></li>
-                        <li><a href="#">Resources</a></li>
-                    </ul>
+                <div class="mdl-mega-footer__bottom-section">
+                    <div class="mdl-logo">仅用于学习/不用于任何商业运作</div>
+
                 </div>
 
-                <div class="mdl-mega-footer__drop-down-section">
-                    <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-                    <h1 class="mdl-mega-footer__heading">Technology</h1>
-                    <ul class="mdl-mega-footer__link-list">
-                        <li><a href="#">How it works</a></li>
-                        <li><a href="#">Patterns</a></li>
-                        <li><a href="#">Usage</a></li>
-                        <li><a href="#">Products</a></li>
-                        <li><a href="#">Contracts</a></li>
-                    </ul>
-                </div>
+            </footer>
+        </main>
 
-                <div class="mdl-mega-footer__drop-down-section">
-                    <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-                    <h1 class="mdl-mega-footer__heading">FAQ</h1>
-                    <ul class="mdl-mega-footer__link-list">
-                        <li><a href="#">Questions</a></li>
-                        <li><a href="#">Answers</a></li>
-                        <li><a href="#">Contact us</a></li>
-                    </ul>
-                </div>
 
-            </div>
-
-            <div class="mdl-mega-footer__bottom-section">
-                <div class="mdl-logo">Title</div>
-                <ul class="mdl-mega-footer__link-list">
-                    <li><a href="#">Help</a></li>
-                    <li><a href="#">Privacy & Terms</a></li>
-                </ul>
-            </div>
-
-        </footer>
     </div>
 </body>
 

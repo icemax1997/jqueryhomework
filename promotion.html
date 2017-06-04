@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/google_api_icons.css">
+    <link rel="stylesheet" href="css/material.css">
+    <script src="js/material.js"></script>
+    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="css/mian.css">
+    <style>
+        .demo-card-square.mdl-card {
+            width: 100%;
+            height: 280px;
+        }
+
+        .mdl-tabs .mdl-js-tabs .mdl-js-ripple-effect {
+            width: 100%;
+        }
+
+        #mytable {
+            width: 100%;
+        }
+
+        #mylittlevcards {
+            width: 48%;
+            margin-top: 0.5em;
+            margin-left: 0.2em;
+            margin-right: 0.2em;
+            margin-bottom: 0.5em;
+            float: left;
+        }
+
+        #mybigcards {
+            width: 100%;
+            margin-bottom: 0.5em;
+        }
+
+        <!-- Wide card with share menu button -->.demo-card-wide.mdl-card {
+            width: 512px;
+        }
+
+        .demo-card-wide>.mdl-card__title {
+            color: #fff;
+            height: 176px;
+        }
+
+        .mdl-tabs__panel ul {
+            color: #fff;
+            font-size: 0.8em;
+            margin-left: -2.5em;
+        }
+
+        .mdl-tabs__tab-bar a {
+            color: #fff;
+        }
+        #d1{
+            width: 100%;
+
+
+        }
+        #d1 th{
+            width: 100%;
+
+
+        }
+    </style>
+    <link rel="stylesheet" href="css/card.css">
+</head>
+
+<body>
+    <div class="demo-layout-transparent mdl-layout mdl-js-layout">
+        <header class="mdl-layout__header mdl-layout__header--transparent">
+            <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <span class="mdl-layout-title">信工农贸网</span>
+                <!-- Add spacer, to align navigation to the right -->
+                <div class="mdl-layout-spacer"></div>
+                <!-- Navigation -->
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="">关于作者</a>
+                    <a class="mdl-navigation__link" href="">GitHub</a>
+                </nav>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">侧滑导航</span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="index.html">网站主页</a>
+                <a class="mdl-navigation__link" href="wodeguanzhu.html">我的关注</a>
+                <a class="mdl-navigation__link" href="shuiguoshucai.html">水果蔬菜</a>
+                <a class="mdl-navigation__link" href="xumushuichan.html">畜牧水产</a>
+                <a class="mdl-navigation__link" href="liangyoumimian.html">粮油米面</a>
+                <a class="mdl-navigation__link" href="nongfujiagong.html">农副加工</a>
+                <a class="mdl-navigation__link" href="miaomuhuacao.html">苗木花草</a>
+                <a class="mdl-navigation__link" href="nongzinongji.html">农资农机</a>
+                <a class="mdl-navigation__link" href="zhongyaocai.html">中药材</a>
+            </nav>
+        </div>
+        <main class="mdl-layout__content">
+            <div class="page-content">
+                <!-- Your content goes here -->
+
+                <div class="mdl-grid">
+                  <div class="mdl-cell mdl-cell--12-col" id="mybanner3">
+                      促销活动列表
+                  </div>
+                    <div class="mdl-cell mdl-cell--2-col"></div>
+                    <div class="mdl-cell mdl-cell--8-col" >
+                        <table class="mdl-data-table mdl-data-table--selectable mdl-shadow--2dp" id="d1">
+                          <thead>
+                              <tr>
+                                <th class="mdl-data-table__cell--non-numeric">活动名称</th>
+                                <th>持续时间</th>
+                                <th>参与度</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="mdl-data-table__cell--non-numeric">买一百送一百</td>
+                                    <td>6.1-6.5</td>
+                                    <td>88%</td>
+                                </tr>
+                                <tr>
+                                    <td class="mdl-data-table__cell--non-numeric">欢乐水果节 </td>
+                                    <td>5.29-6.5</td>
+                                    <td>84%</td>
+                                </tr>
+                                <tr>
+                                    <td class="mdl-data-table__cell--non-numeric">养生讲堂</td>
+                                    <td>6.7-6.12</td>
+                                    <td>78%</td>
+                                </tr>
+                                <tr>
+                                    <td class="mdl-data-table__cell--non-numeric">创富展销节</td>
+                                    <td>6.13</td>
+                                    <td>85%</td>
+                                </tr>
+                                <tr>
+                                    <td class="mdl-data-table__cell--non-numeric">农贸会员日 </td>
+                                    <td>6.18</td>
+                                    <td>65%</td>
+                                </tr>
+                                <tr>
+                                    <td class="mdl-data-table__cell--non-numeric">西红柿批发专场</td>
+                                    <td>5.20-6.3</td>
+                                    <td>23%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+
+
+                    </div>
+                    <div class="mdl-cell mdl-cell--2-col"></div>
+                </div>
+                <footer class="mdl-mega-footer">
+                    <div class="mdl-mega-footer__middle-section">
+
+                        <div class="mdl-mega-footer__drop-down-section">
+                            <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                            <h1 class="mdl-mega-footer__heading">网站开发框架</h1>
+                            <ul class="mdl-mega-footer__link-list">
+                                <li><a href="#">Material Design</a></li>
+
+                            </ul>
+                        </div>
+
+                        <div class="mdl-mega-footer__drop-down-section">
+                            <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                            <h1 class="mdl-mega-footer__heading">作者</h1>
+                            <ul class="mdl-mega-footer__link-list">
+                                <li><a href="#">16905214</a></li>
+
+                            </ul>
+                        </div>
+
+                        <div class="mdl-mega-footer__drop-down-section">
+                            <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                            <h1 class="mdl-mega-footer__heading">联系方式</h1>
+                            <ul class="mdl-mega-footer__link-list">
+                                <li><a href="#">158-5829-8995</a></li>
+                                <li><a href="#">icemax@gmail.com</a></li>
+                                <li><a href="#">16905214@hdu.edu.cn</a></li>
+
+                            </ul>
+                        </div>
+
+                        <div class="mdl-mega-footer__drop-down-section">
+                            <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                            <h1 class="mdl-mega-footer__heading">技术交流</h1>
+                            <ul class="mdl-mega-footer__link-list">
+                                <li><a href="#">QQ:1137574126</a></li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="mdl-mega-footer__bottom-section">
+                        <div class="mdl-logo">仅用于学习/不用于任何商业运作</div>
+
+                    </div>
+
+                </footer>
+
+
+
+
+            </div>
+        </main>
+
+    </div>
+</body>
+
+</html>

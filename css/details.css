@@ -1,0 +1,52 @@
+#detailspic{
+  background: orange;
+  height: 400px;
+  text-align: center;
+  padding: 0.1em;
+  line-height: 1.5em;
+  font-size:8em;
+  font-weight: bold;
+  color: #fff;
+}
+.mdl-cell p{
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #fff;
+
+}
+#mytable{
+  width: 95%;
+  text-align: left;
+  word-wrap: break-word
+}
+#mytable button{
+float: left;
+}
+.mycartbutton{
+  margin-top: 0.8em;
+  margin-right: 0.5em;
+  width: 25%;
+  background:rgb(254, 192, 7);
+  color: #fff;
+  font-size: 1.2em;
+}
+.demo-card-square.mdl-card {
+  width: 320px;
+  height: 320px;
+}
+.demo-card-square > .mdl-card__title {
+  color: #fff;
+  background:
+    url('../img/dog.png') bottom right 15% no-repeat #46B6AC;
+}
+#mypagelittlecards{
+  width: 100%;
+  margin-bottom: 0.5em;
+}
+.myprice{
+  color: red;
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 1.5em;
+  margin-right: 3em;
+}

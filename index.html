@@ -2,95 +2,40 @@
 <html lang="en">
 
 <head>
-    <title>信工农贸网</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
     <link rel="stylesheet" type="text/css" href="css/google_api_icons.css">
     <link rel="stylesheet" href="css/material.css">
     <script src="js/material.js"></script>
     <script src="js/jquery.js"></script>
-    <script src="js/slide.js"></script>
-    <style>
-        .demo-card-square.mdl-card {
-            width: 100%;
-            height: 280px;
-        }
-
-        .demo-card-square>.mdl-card__title {
-            color: #fff;
-            background: url('img/dog.png') bottom right 15% no-repeat #46B6AC;
-        }
-
-        .mdl-tabs .mdl-js-tabs .mdl-js-ripple-effect {
-            width: 100%;
-        }
-
-        #mytable {
-            width: 100%;
-        }
-
-        #mylittlevcards {
-            width: 48%;
-            margin-top: 0.5em;
-            margin-left: 0.2em;
-            margin-right: 0.2em;
-            float: left;
-        }
-
-        #mybigcards {
-            width: 100%;
-            margin-bottom: 0.5em;
-        }
-
-        <!-- Wide card with share menu button -->.demo-card-wide.mdl-card {
-            width: 512px;
-        }
-
-        .demo-card-wide>.mdl-card__title {
-            color: #fff;
-            height: 176px;
-            background: url('img/welcome_card.jpg') center / cover;
-        }
-
-        .demo-card-wide>.mdl-card__menu {
-            color: #fff;
-        }
-
-        #mySlide {
-            width: 120%;
-            height: 700px;
-            margin: -1.5em;
-            padding: -1.5em;
-            margin-bottom: 0.2em;
-        }
-        .mdl-tabs__panel ul{
-          font-size: 0.8em;
-
-          margin-left: -2.5em;
-        }
-    </style>
+    <link rel="stylesheet" href="css/mian.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/card.css">
+    <link rel='stylesheet' href='css/animate.min.css'>
+    <link rel="stylesheet" href="css/notification.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/notification.js"></script>
 </head>
 
 <body>
-    <!-- Always shows a header, even in smaller screens. -->
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-        <header class="mdl-layout__header">
+    <div class="demo-layout-transparent mdl-layout mdl-js-layout">
+        <header class="mdl-layout__header mdl-layout__header--transparent">
             <div class="mdl-layout__header-row">
                 <!-- Title -->
                 <span class="mdl-layout-title">信工农贸网</span>
                 <!-- Add spacer, to align navigation to the right -->
                 <div class="mdl-layout-spacer"></div>
-                <!-- Navigation. We hide it in small screens. -->
-                <nav class="mdl-navigation mdl-layout--large-screen-only">
-                    <a class="mdl-navigation__link" href="">关于作者</a>
-                    <a class="mdl-navigation__link" href="">GitHub</a>
+                <!-- Navigation -->
+                <nav class="mdl-navigation">
 
+                    <a class="mdl-navigation__link" href="https://github.com/icemax1997/jqueryhomework">GitHub</a>
                 </nav>
             </div>
         </header>
         <div class="mdl-layout__drawer">
-            <span class="mdl-layout-title">信工农贸网</span>
+            <span class="mdl-layout-title">侧滑导航</span>
             <nav class="mdl-navigation">
                 <a class="mdl-navigation__link" href="index.html">网站主页</a>
                 <a class="mdl-navigation__link" href="wodeguanzhu.html">我的关注</a>
@@ -104,395 +49,396 @@
             </nav>
         </div>
         <main class="mdl-layout__content">
-        </main>
-        <div class="page-content">
-            <!-- Your content goes here -->
+            <div class="page-content">
+                <!-- Your content goes here -->
 
-
-            <div class="mdl-grid">
-                <div class="mdl-cell mdl-cell--6-col">
-                    <div class="demo-card-wide mdl-card mdl-shadow--2dp" id="mybigcards">
-                        <div class="mdl-card__title">
-                            <h2 class="mdl-card__title-text">水果蔬菜</h2>
-                        </div>
-                        <div class="mdl-card__supporting-text">
-                            小拳拳大沙河10斤红富士新鲜苹果冰糖心水果比烟台阿克苏好吃包邮
-                        </div>
-                        <div class="mdl-card__actions mdl-card--border">
-                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--12-col" id="mybanner">
+                        小孩子都喜欢<br>
+                        <span>新鲜的水果</span><br>
+                        <span id="mybanneradd"><a href="promotion.html" class="a1">$ 6月1日 水果儿童节大促 $</a></span>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="demo-card-wide mdl-card mdl-shadow--2dp" id="mybigcards">
+                            <div class="mdl-card__title shuiguoshucai">
+                                <h2 class="mdl-card__title-text">水果蔬菜</h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                小拳拳大沙河10斤红富士新鲜苹果冰糖心水果比烟台阿克苏好吃包邮
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border">
+                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="fruit_details.html">
                         查看详情
                       </a>
-                        </div>
-                        <div class="mdl-card__menu">
-                            <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                        <i class="material-icons">share</i>
-                      </button>
-                        </div>
-                    </div>
-                    <div class="demo-card-wide mdl-card mdl-shadow--2dp" id="mybigcards">
-                        <div class="mdl-card__title">
-                            <h2 class="mdl-card__title-text">中药材</h2>
-                        </div>
-                        <div class="mdl-card__supporting-text">
-                            【吉林敖东_红参片100g】正宗东北长白山特产人参礼盒红参切片
-                        </div>
-                        <div class="mdl-card__actions mdl-card--border">
-                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                        查看详情
-                      </a>
-                        </div>
-                        <div class="mdl-card__menu">
-                            <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                        <i class="material-icons">share</i>
-                      </button>
-                        </div>
-                    </div>
-                    <div class="demo-card-wide mdl-card mdl-shadow--2dp" id="mybigcards">
-                        <div class="mdl-card__title">
-                            <h2 class="mdl-card__title-text">苗木花草</h2>
-                        </div>
-                        <div class="mdl-card__supporting-text">
-                            正品黄杨木雕手把件貔貅挂件招财有求必应小叶黄杨雕刻工艺品把玩
-                        </div>
-                        <div class="mdl-card__actions mdl-card--border">
-                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                        查看详情
-                      </a>
-                        </div>
-                        <div class="mdl-card__menu">
-                            <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                        <i class="material-icons">share</i>
-                      </button>
-                        </div>
-                    </div>
-                    <div class="demo-card-wide mdl-card mdl-shadow--2dp" id="mybigcards">
-                        <div class="mdl-card__title">
-                            <h2 class="mdl-card__title-text">粮油米面</h2>
-                        </div>
-                        <div class="mdl-card__supporting-text">
-                            第一坊花生油900ml 清真食用油 冷榨工艺 粮油 小瓶装
-                        </div>
-                        <div class="mdl-card__actions mdl-card--border">
-                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                        查看详情
-                      </a>
-                        </div>
-                        <div class="mdl-card__menu">
-                            <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                        <i class="material-icons">share</i>
-                      </button>
-                        </div>
-                    </div>
-                    <div class="demo-card-wide mdl-card mdl-shadow--2dp" id="mybigcards">
-                        <div class="mdl-card__title">
-                            <h2 class="mdl-card__title-text">农副加工</h2>
-                        </div>
-                        <div class="mdl-card__supporting-text">
-                            运福有机椴木野生小香菇东北特产干货 蘑菇珍珠菇 金钱菇 冬菇
-                        </div>
-                        <div class="mdl-card__actions mdl-card--border">
-                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                        查看详情
-                      </a>
-                        </div>
-                        <div class="mdl-card__menu">
-                            <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                        <i class="material-icons">share</i>
-                      </button>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="mdl-cell mdl-cell--4-col">
-                    <table class="mdl-data-table  mdl-data-table--selectable mdl-shadow--2dp" id="mytable">
-                        <thead>
-                            <tr>
-                                <th class="mdl-data-table__cell--non-numeric">品种</th>
-                                <th>产地</th>
-                                <th>价格</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="mdl-data-table__cell--non-numeric">红富士</td>
-                                <td>甘肃</td>
-                                <td>$2.90</td>
-                            </tr>
-                            <tr>
-                                <td class="mdl-data-table__cell--non-numeric">冰糖雪梨</td>
-                                <td>杭州</td>
-                                <td>$1.25</td>
-                            </tr>
-                            <tr>
-                                <td class="mdl-data-table__cell--non-numeric">甘蔗</td>
-                                <td>海南</td>
-                                <td>$2.35</td>
-                            </tr>
-                            <tr>
-                                <td class="mdl-data-table__cell--non-numeric">甘蔗</td>
-                                <td>海南</td>
-                                <td>$2.35</td>
-                            </tr>
-                            <tr>
-                                <td class="mdl-data-table__cell--non-numeric">甘蔗</td>
-                                <td>海南</td>
-                                <td>$2.35</td>
-                            </tr>
-                            <tr>
-                                <td class="mdl-data-table__cell--non-numeric">甘蔗</td>
-                                <td>海南</td>
-                                <td>$2.35</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="demo-card-square mdl-card mdl-shadow--2dp" id="mylittlevcards">
-                        <div class="mdl-card__title mdl-card--expand">
-                            <h2 class="mdl-card__title-text">促销广告</h2>
-                        </div>
-                        <div class="mdl-card__supporting-text">
-                            买一百送一百
-                        </div>
-                        <div class="mdl-card__actions mdl-card--border">
-                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                              查看详情
-                            </a>
-                        </div>
-                    </div>
-                    <div class="demo-card-square mdl-card mdl-shadow--2dp" id="mylittlevcards">
-                        <div class="mdl-card__title mdl-card--expand">
-                            <h2 class="mdl-card__title-text">促销广告</h2>
-                        </div>
-                        <div class="mdl-card__supporting-text">
-                            欢乐水果节
-                        </div>
-                        <div class="mdl-card__actions mdl-card--border">
-                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                              查看详情
-                            </a>
-                        </div>
-                    </div>
-                    <div class="demo-card-square mdl-card mdl-shadow--2dp" id="mylittlevcards">
-                        <div class="mdl-card__title mdl-card--expand">
-                            <h2 class="mdl-card__title-text">促销广告</h2>
-                        </div>
-                        <div class="mdl-card__supporting-text">
-                            养生讲堂
-                        </div>
-                        <div class="mdl-card__actions mdl-card--border">
-                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                              查看详情
-                            </a>
-                        </div>
-                    </div>
-                    <div class="demo-card-square mdl-card mdl-shadow--2dp" id="mylittlevcards">
-                        <div class="mdl-card__title mdl-card--expand">
-                            <h2 class="mdl-card__title-text">促销广告</h2>
-                        </div>
-                        <div class="mdl-card__supporting-text">
-                            创富展销节
-                        </div>
-                        <div class="mdl-card__actions mdl-card--border">
-                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                              查看详情
-                            </a>
-                        </div>
-                    </div>
-                    <div class="demo-card-square mdl-card mdl-shadow--2dp" id="mylittlevcards">
-                        <div class="mdl-card__title mdl-card--expand">
-                            <h2 class="mdl-card__title-text">促销广告</h2>
-                        </div>
-                        <div class="mdl-card__supporting-text">
-                            农贸会员日
-                        </div>
-                        <div class="mdl-card__actions mdl-card--border">
-                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                              查看详情
-                            </a>
-                        </div>
-                    </div>
-                    <div class="demo-card-square mdl-card mdl-shadow--2dp" id="mylittlevcards">
-                        <div class="mdl-card__title mdl-card--expand">
-                            <h2 class="mdl-card__title-text">促销广告</h2>
-                        </div>
-                        <div class="mdl-card__supporting-text">
-                            西红柿批发专场
-                        </div>
-                        <div class="mdl-card__actions mdl-card--border">
-                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                              查看详情
-                            </a>
-                        </div>
-                    </div>
-                    <div class="demo-list-action mdl-list">
-                        <div class="mdl-list__item">
-                            <span class="mdl-list__item-primary-content">
-                              <i class="material-icons mdl-list__item-avatar">person</i>
-                              <span>前台咨询小王</span>
-                            </span>
-                            <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
-                        </div>
-                        <div class="mdl-list__item">
-                            <span class="mdl-list__item-primary-content">
-                              <i class="material-icons mdl-list__item-avatar">person</i>
-                              <span>售后客服小杰</span>
-                            </span>
-                            <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
-                        </div>
-                        <div class="mdl-list__item">
-                            <span class="mdl-list__item-primary-content">
-                                  <i class="material-icons mdl-list__item-avatar">person</i>
-                                  <span>售后服务小张</span>
-                            </span>
-                            <span class="mdl-list__item-secondary-content">
-                        <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
-                              </span>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="mdl-cell mdl-cell--2-col">
-                    <form action="#">
-                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
-                            <label class="mdl-button mdl-js-button mdl-button--icon" for="sample6">
-                              <i class="material-icons">search</i>
-                            </label>
-                            <div class="mdl-textfield__expandable-holder">
-                                <input class="mdl-textfield__input" type="text" id="sample6">
-                                <label class="mdl-textfield__label" for="sample-expandable">Expandable Input</label>
+                            </div>
+                            <div class="mdl-card__menu">
+                                <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                    <i class="material-icons">share</i>
+                  </button>
                             </div>
                         </div>
-                    </form>
-                    <div class="demo-card-square mdl-card mdl-shadow--2dp">
-                        <div class="mdl-card__title mdl-card--expand">
-                            <h2 class="mdl-card__title-text">开始你的购物</h2>
+                        <div class="demo-card-wide mdl-card mdl-shadow--2dp" id="mybigcards">
+                            <div class="mdl-card__title zhongyaocai">
+                                <h2 class="mdl-card__title-text">中药材</h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                【吉林敖东_红参片100g】正宗东北长白山特产人参礼盒红参切片
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border">
+                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="zhongyaocai_details.html">
+                    查看详情
+                  </a>
+                            </div>
+                            <div class="mdl-card__menu">
+                                <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                    <i class="material-icons">share</i>
+                  </button>
+                            </div>
                         </div>
-                        <div class="mdl-card__supporting-text">
-                            <!-- Textfield with Floating Label -->
-                            <form action="#">
-                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                    <input class="mdl-textfield__input" type="text" id="sample3">
-                                    <label class="mdl-textfield__label" for="sample3">账号</label>
-                                </div>
-                            </form>
-                            <!-- Numeric Textfield with Floating Label -->
-                            <form action="#">
-                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample4">
-                                    <label class="mdl-textfield__label" for="sample4">密码</label>
-                                    <span class="mdl-textfield__error">Input is not a number!</span>
-                                </div>
-                            </form>
+                        <div class="demo-card-wide mdl-card mdl-shadow--2dp" id="mybigcards">
+                            <div class="mdl-card__title miaomuhuacao">
+                                <h2 class="mdl-card__title-text">苗木花草</h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                正品黄杨木雕手把件貔貅挂件招财有求必应小叶黄杨雕刻工艺品把玩
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border">
+                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="miaomuhuacao_details.html">
+                    查看详情
+                  </a>
+                            </div>
+                            <div class="mdl-card__menu">
+                                <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                    <i class="material-icons">share</i>
+                  </button>
+                            </div>
                         </div>
-                        <div class="mdl-card__actions mdl-card--border">
-                            <center>
-                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                              登录
-                            </a>
-                            </center>
+                        <div class="demo-card-wide mdl-card mdl-shadow--2dp" id="mybigcards">
+                            <div class="mdl-card__title liangyoumimian">
+                                <h2 class="mdl-card__title-text">粮油米面</h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                第一坊花生油900ml 清真食用油 冷榨工艺 粮油 小瓶装
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border">
+                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="liangyoumimian_details.html">
+                    查看详情
+                  </a>
+                            </div>
+                            <div class="mdl-card__menu">
+                                <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                    <i class="material-icons">share</i>
+                  </button>
+                            </div>
+                        </div>
+                        <div class="demo-card-wide mdl-card mdl-shadow--2dp" id="mybigcards">
+                            <div class="mdl-card__title nongfujiagong">
+                                <h2 class="mdl-card__title-text">农副加工</h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                运福有机椴木野生小香菇东北特产干货 蘑菇珍珠菇 金钱菇 冬菇
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border">
+                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="nongfujiagong_details.html">
+                    查看详情
+                  </a>
+                            </div>
+                            <div class="mdl-card__menu">
+                                <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                    <i class="material-icons">share</i>
+                  </button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col">
+                        <table class="mdl-data-table  mdl-data-table--selectable mdl-shadow--2dp" id="mytable">
+                            <thead>
+                                <tr>
+                                    <th class="mdl-data-table__cell--non-numeric">品种</th>
+                                    <th>产地</th>
+                                    <th>价格</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="mdl-data-table__cell--non-numeric"><a href="mark.html" class="a2">红富士</a></td>
+                                    <td>甘肃</td>
+                                    <td>$2.90</td>
+                                </tr>
+                                <tr>
+                                    <td class="mdl-data-table__cell--non-numeric"><a href="mark.html" class="a2">冰糖雪梨</a></td>
+                                    <td>杭州</td>
+                                    <td>$1.25</td>
+                                </tr>
+                                <tr>
+                                    <td class="mdl-data-table__cell--non-numeric"><a href="mark.html" class="a2">甘蔗</a></td>
+                                    <td>海南</td>
+                                    <td>$2.35</td>
+                                </tr>
+                                <tr>
+                                    <td class="mdl-data-table__cell--non-numeric"><a href="mark.html" class="a2">冰糖雪梨</a></td>
+                                    <td>海南</td>
+                                    <td>$2.35</td>
+                                </tr>
+                                <tr>
+                                    <td class="mdl-data-table__cell--non-numeric"><a href="mark.html" class="a2">冰糖雪梨</a></td>
+                                    <td>海南</td>
+                                    <td>$2.35</td>
+                                </tr>
+                                <tr>
+                                    <td class="mdl-data-table__cell--non-numeric"><a href="mark.html" class="a2">冰糖雪梨</a></td>
+                                    <td>海南</td>
+                                    <td>$2.35</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="demo-card-square mdl-card mdl-shadow--2dp" id="mylittlevcards">
+                            <div class="mdl-card__title mdl-card--expand">
+                                <h2 class="mdl-card__title-text">促销广告</h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                买一百送一百
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border">
+                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="promotion.html">
+                          查看详情
+                        </a>
+                            </div>
+                        </div>
+                        <div class="demo-card-square mdl-card mdl-shadow--2dp" id="mylittlevcards">
+                            <div class="mdl-card__title mdl-card--expand">
+                                <h2 class="mdl-card__title-text">促销广告</h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                欢乐水果节
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border">
+                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="promotion.html">
+                          查看详情
+                        </a>
+                            </div>
+                        </div>
+                        <div class="demo-card-square mdl-card mdl-shadow--2dp" id="mylittlevcards">
+                            <div class="mdl-card__title mdl-card--expand">
+                                <h2 class="mdl-card__title-text">促销广告</h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                养生讲堂
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border">
+                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="promotion.html">
+                          查看详情
+                        </a>
+                            </div>
+                        </div>
+                        <div class="demo-card-square mdl-card mdl-shadow--2dp" id="mylittlevcards">
+                            <div class="mdl-card__title mdl-card--expand">
+                                <h2 class="mdl-card__title-text">促销广告</h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                创富展销节
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border">
+                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="promotion.html">
+                          查看详情
+                        </a>
+                            </div>
+                        </div>
+                        <div class="demo-card-square mdl-card mdl-shadow--2dp" id="mylittlevcards">
+                            <div class="mdl-card__title mdl-card--expand">
+                                <h2 class="mdl-card__title-text">促销广告</h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                农贸会员日
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border">
+                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="promotion.html">
+                          查看详情
+                        </a>
+                            </div>
+                        </div>
+                        <div class="demo-card-square mdl-card mdl-shadow--2dp" id="mylittlevcards">
+                            <div class="mdl-card__title mdl-card--expand">
+                                <h2 class="mdl-card__title-text">促销广告</h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                西红柿批发专场
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border">
+                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="promotion.html">
+                          查看详情
+                        </a>
+                            </div>
+                        </div>
+                        <div class="demo-list-action mdl-list demo-card-square mdl-card" id="mycontact">
+                            <div class="mdl-list__item">
+                                <span class="mdl-list__item-primary-content">
+                          <i class="material-icons mdl-list__item-avatar">person</i>
+                          <span>前台咨询小王</span>
+                                </span>
+                                <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
+                            </div>
+                            <div class="mdl-list__item">
+                                <span class="mdl-list__item-primary-content">
+                          <i class="material-icons mdl-list__item-avatar">person</i>
+                          <span>售后客服小杰</span>
+                                </span>
+                                <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
+                            </div>
+                            <div class="mdl-list__item">
+                                <span class="mdl-list__item-primary-content">
+                              <i class="material-icons mdl-list__item-avatar">person</i>
+                              <span>售后服务小张</span>
+                                </span>
+                                <span class="mdl-list__item-secondary-content">
+                            <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
+                          </span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="mdl-cell mdl-cell--2-col">
+                        <form action="#" class=" demo-card-square" style="background:#fff; margin-bottom:0.5em;">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+                                <label class="mdl-button mdl-js-button mdl-button--icon" for="sample6">
+                                    <i class="material-icons">search</i>
+                              </label>
+                                <div class="mdl-textfield__expandable-holder">
+                                    <input class="mdl-textfield__input" type="text" id="sample6">
+                                    <label class="mdl-textfield__label" for="sample-expandable">Expandable Input</label>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                            <div class="mdl-card__title mdl-card--expand" id="login">
+                                <h2 class="mdl-card__title-text">开始你的购物</h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                <!-- Textfield with Floating Label -->
+                                <form action="#">
+                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                        <input class="mdl-textfield__input" type="text" id="sample3">
+                                        <label class="mdl-textfield__label" for="sample3">账号</label>
+                                    </div>
+                                </form>
+                                <!-- Numeric Textfield with Floating Label -->
+                                <form action="#">
+                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample4">
+                                        <label class="mdl-textfield__label" for="sample4">密码</label>
+                                        <span class="mdl-textfield__error">Input is not a number!</span>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border " value="bounceIn">
+                                <center>
+                                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" id="mylogin">
+                                    登录
+                                  </a>
+                                </center>
+                            </div>
+                            <script>
+                            $('#mylogin').click(function (event) {
+                              
+                            </script>
+                        </div>
+                        <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+                            <div class="mdl-tabs__tab-bar">
+                                <a href="#starks-panel" class="mdl-tabs__tab is-active">日最佳</a>
+                                <a href="#lannisters-panel" class="mdl-tabs__tab">周最佳</a>
+                                <a href="#targaryens-panel" class="mdl-tabs__tab">月最佳</a>
+                            </div>
+
+                            <div class="mdl-tabs__panel is-active" id="starks-panel">
+                                <ul>
+                                    <li><a href="news1.html" class="a1">中储粮：2017年夏粮最低收购预案启动可能性较大</a></li>
+                                    <li><a href="news2.html" class="a1">2017年农业金融重大利好消息，大胆创新国家给补200-800万！</a></li>
+                                    <li><a href="enws3.html" class="a1">大蒜价格跳水怎么办？他们靠几招避开风险，战胜“蒜你完”</a></li>
+                                    <li><a href="news4.html" class="a1">东方乳猪品牌化 产业发展上“快车道”</a></li>
+                                    <li><a href="news5.html" class="a1">“一元菜”成了沈阳蔬菜市场“主角”</a></li>
+
+                                </ul>
+                            </div>
+                            <div class="mdl-tabs__panel" id="lannisters-panel">
+                                <ul>
+                                    <li><a href="enws3.html" class="a1">大蒜价格跳水怎么办？他们靠几招避开风险，战胜“蒜你完”</a></li>
+                                    <li><a href="news4.html" class="a1">东方乳猪品牌化 产业发展上“快车道”</a></li>
+                                    <li><a href="news5.html" class="a1">“一元菜”成了沈阳蔬菜市场“主角”</a></li>
+                                    <li><a href="news1.html" class="a1">中储粮：2017年夏粮最低收购预案启动可能性较大</a></li>
+                                    <li><a href="news2.html" class="a1">2017年农业金融重大利好消息，大胆创新国家给补200-800万！</a></li>
+
+
+                                </ul>
+                            </div>
+                            <div class="mdl-tabs__panel" id="targaryens-panel">
+                                <ul>
+
+                                    <li><a href="news4.html" class="a1">东方乳猪品牌化 产业发展上“快车道”</a></li>
+                                    <li><a href="news5.html" class="a1">“一元菜”成了沈阳蔬菜市场“主角”</a></li>
+                                    <li><a href="enws3.html" class="a1">大蒜价格跳水怎么办？他们靠几招避开风险，战胜“蒜你完”</a></li>
+                                    <li><a href="news2.html" class="a1">2017年农业金融重大利好消息，大胆创新国家给补200-800万！</a></li>
+                                    <li><a href="news1.html" class="a1">中储粮：2017年夏粮最低收购预案启动可能性较大</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
-                        <div class="mdl-tabs__tab-bar">
-                            <a href="#starks-panel" class="mdl-tabs__tab is-active">日最佳</a>
-                            <a href="#lannisters-panel" class="mdl-tabs__tab">周最佳</a>
-                            <a href="#targaryens-panel" class="mdl-tabs__tab">月最佳</a>
-                        </div>
+                </div>
+                <footer class="mdl-mega-footer">
+                    <div class="mdl-mega-footer__middle-section">
 
-                        <div class="mdl-tabs__panel is-active" id="starks-panel">
-                            <ul>
-                                <li>中储粮：2017年夏粮最低收购预案启动可能性较大</li>
-                                <li>2017年农业金融重大利好消息，大胆创新国家给补200-800万！</li>
-                                <li>大蒜价格跳水怎么办？他们靠几招避开风险，战胜“蒜你完”</li>
-                                <li>东方乳猪品牌化 产业发展上“快车道”</li>
-                                <li>“一元菜”成了沈阳蔬菜市场“主角”</li>
+                        <div class="mdl-mega-footer__drop-down-section">
+                            <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                            <h1 class="mdl-mega-footer__heading">网站开发框架</h1>
+                            <ul class="mdl-mega-footer__link-list">
+                                <li><a href="#">Material Design</a></li>
 
                             </ul>
                         </div>
-                        <div class="mdl-tabs__panel" id="lannisters-panel">
-                            <ul>
-                                <li>2017年国内生猪存栏量真的充足吗？</li>
-                                <li>今年小麦收购价涨势喜人，后期行情怎么样？</li>
-                                <li>端午节后猪肉需求回落 短期猪价或趋稳</li>
-                                <li>麸皮价格会否跌下“7毛神坛”</li>
-                                <li>蔬菜大量上市价格不如人意 蔬菜市场整体处于滞销状态</li>
+
+                        <div class="mdl-mega-footer__drop-down-section">
+                            <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                            <h1 class="mdl-mega-footer__heading">作者</h1>
+                            <ul class="mdl-mega-footer__link-list">
+                                <li><a href="#">16905214</a></li>
 
                             </ul>
                         </div>
-                        <div class="mdl-tabs__panel" id="targaryens-panel">
-                            <ul>
-                                <li>东方乳猪品牌化 产业发展上“快车道”</li>
-                                <li>“一元菜”成了沈阳蔬菜市场“主角”</li>
-                                <li>2017年国内生猪存栏量真的充足吗？</li>
-                                <li>水果圈流行“丑萌”风 “不知火”真的卖火了</li>
-                                <li>女承父业“柑橘西施”卖四川眉山好橘子</li>
+
+                        <div class="mdl-mega-footer__drop-down-section">
+                            <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                            <h1 class="mdl-mega-footer__heading">联系方式</h1>
+                            <ul class="mdl-mega-footer__link-list">
+                                <li><a href="#">158-5829-8995</a></li>
+                                <li><a href="#">icemax@gmail.com</a></li>
+                                <li><a href="#">16905214@hdu.edu.cn</a></li>
 
                             </ul>
                         </div>
+
+                        <div class="mdl-mega-footer__drop-down-section">
+                            <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                            <h1 class="mdl-mega-footer__heading">技术交流</h1>
+                            <ul class="mdl-mega-footer__link-list">
+                                <li><a href="#">QQ:1137574126</a></li>
+
+                            </ul>
+                        </div>
+
                     </div>
-                </div>
-            </div>
+
+                    <div class="mdl-mega-footer__bottom-section">
+                        <div class="mdl-logo">仅用于学习/不用于任何商业运作</div>
+
+                    </div>
+
+                </footer>
 
 
 
-
-        </div>
-        <footer class="mdl-mega-footer">
-            <div class="mdl-mega-footer__middle-section">
-
-                <div class="mdl-mega-footer__drop-down-section">
-                    <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-                    <h1 class="mdl-mega-footer__heading">Features</h1>
-                    <ul class="mdl-mega-footer__link-list">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Terms</a></li>
-                        <li><a href="#">Partners</a></li>
-                        <li><a href="#">Updates</a></li>
-                    </ul>
-                </div>
-
-                <div class="mdl-mega-footer__drop-down-section">
-                    <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-                    <h1 class="mdl-mega-footer__heading">Details</h1>
-                    <ul class="mdl-mega-footer__link-list">
-                        <li><a href="#">Specs</a></li>
-                        <li><a href="#">Tools</a></li>
-                        <li><a href="#">Resources</a></li>
-                    </ul>
-                </div>
-
-                <div class="mdl-mega-footer__drop-down-section">
-                    <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-                    <h1 class="mdl-mega-footer__heading">Technology</h1>
-                    <ul class="mdl-mega-footer__link-list">
-                        <li><a href="#">How it works</a></li>
-                        <li><a href="#">Patterns</a></li>
-                        <li><a href="#">Usage</a></li>
-                        <li><a href="#">Products</a></li>
-                        <li><a href="#">Contracts</a></li>
-                    </ul>
-                </div>
-
-                <div class="mdl-mega-footer__drop-down-section">
-                    <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-                    <h1 class="mdl-mega-footer__heading">FAQ</h1>
-                    <ul class="mdl-mega-footer__link-list">
-                        <li><a href="#">Questions</a></li>
-                        <li><a href="#">Answers</a></li>
-                        <li><a href="#">Contact us</a></li>
-                    </ul>
-                </div>
 
             </div>
-
-            <div class="mdl-mega-footer__bottom-section">
-                <div class="mdl-logo">Title</div>
-                <ul class="mdl-mega-footer__link-list">
-                    <li><a href="#">Help</a></li>
-                    <li><a href="#">Privacy & Terms</a></li>
-                </ul>
-            </div>
-
-        </footer>
+        </main>
     </div>
 </body>
 

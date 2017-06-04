@@ -1,0 +1,45 @@
+#mysearchtable {
+    width: 100%;
+    height: 100px;
+}
+#mybigcards{
+  width: 100%;
+  margin-top:0.5em;
+}
+<!-- Wide card with share menu button -->
+
+.demo-card-wide.mdl-card {
+  width: 512px;
+}
+.demo-card-wide > .mdl-card__title {
+  height: 176px;
+}
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+.demo-card-square.mdl-card {
+  width: 320px;
+  height: 320px;
+}
+.demo-card-square > .mdl-card__title {
+  color: #fff;
+  background:
+    url('../img/dog.png') bottom right 15% no-repeat #46B6AC;
+}
+#mypagelittlecards{
+  width: 100%;
+  margin-bottom: 0.5em;
+}
+#mytable{
+  width: 100%;
+  margin-bottom: 0.5em;
+}
+#pagebar{
+  width: 100%;
+  background: rgb(254, 87, 34);
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  color: #fff;
+  padding: 0.5em;
+}

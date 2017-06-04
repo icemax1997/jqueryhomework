@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>信工农贸网</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/google_api_icons.css">
+    <link rel="stylesheet" href="css/material.css">
+    <script src="js/material.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/slide.js"></script>
+    <link rel="stylesheet" href="css/mian.css">
+      <link rel="stylesheet" href="css/details.css">
+
+    </style>
+</head>
+
+<body>
+  <div class="demo-layout-transparent mdl-layout mdl-js-layout">
+      <header class="mdl-layout__header mdl-layout__header--transparent">
+          <div class="mdl-layout__header-row">
+              <!-- Title -->
+              <span class="mdl-layout-title">信工农贸网</span>
+              <!-- Add spacer, to align navigation to the right -->
+              <div class="mdl-layout-spacer"></div>
+              <!-- Navigation -->
+              <nav class="mdl-navigation">
+
+                  <a class="mdl-navigation__link" href="https://github.com/icemax1997/jqueryhomework">GitHub</a>
+              </nav>
+          </div>
+      </header>
+      <div class="mdl-layout__drawer">
+          <span class="mdl-layout-title">侧滑导航</span>
+          <nav class="mdl-navigation">
+              <a class="mdl-navigation__link" href="index.html">网站主页</a>
+              <a class="mdl-navigation__link" href="wodeguanzhu.html">我的关注</a>
+              <a class="mdl-navigation__link" href="shuiguoshucai.html">水果蔬菜</a>
+              <a class="mdl-navigation__link" href="xumushuichan.html">畜牧水产</a>
+              <a class="mdl-navigation__link" href="liangyoumimian.html">粮油米面</a>
+              <a class="mdl-navigation__link" href="nongfujiagong.html">农副加工</a>
+              <a class="mdl-navigation__link" href="miaomuhuacao.html">苗木花草</a>
+              <a class="mdl-navigation__link" href="nongzinongji.html">农资农机</a>
+              <a class="mdl-navigation__link" href="zhongyaocai.html">中药材</a>
+          </nav>
+      </div>
+        <main class="mdl-layout__content">
+            xxx
+        </main>
+        <div class="page-content">
+            <!-- Your content goes here -->
+
+            <div class="mdl-grid">
+              <div class="mdl-cell mdl-cell--4-col" id="detailspic">商品<br>图片</div>
+              <div class="mdl-cell mdl-cell--6-col">
+                <p>2017年新鲜庆元香菇干货特级小香菇农家特产蘑菇冬菇花菇200g包邮</p>
+                <span  class="myprice">RMB 27 </span>
+                <table class="mdl-data-table mdl-data-table--selectable mdl-shadow--2dp" id="mytable">
+
+                  <tbody>
+
+                    <tr>
+                        <td class="mdl-data-table__cell--non-numeric">套餐选择</td>
+                      <td >
+                          <!-- Flat button with ripple -->
+                          <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                            套餐A
+                          </button>
+                          <!-- Flat button with ripple -->
+                          <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                            套餐B
+                          </button>
+                          <!-- Flat button with ripple -->
+                          <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                            套餐C
+                          </button>
+                          <!-- Flat button with ripple -->
+                          <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                            套餐D
+                          </button>
+                          <!-- Flat button with ripple -->
+                          <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                            套餐E
+                          </button>
+                          <!-- Flat button with ripple -->
+                          <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                            套餐G
+                          </button>
+                          <!-- Flat button with ripple -->
+                          <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                            套餐H
+                          </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="mdl-data-table__cell--non-numeric">支持的付款方式</td>
+                      <td >
+                          <!-- Flat button with ripple -->
+                          <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                            货到付款
+                          </button>
+                          <!-- Flat button with ripple -->
+                          <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                            蚂蚁花呗
+                          </button>
+                          <!-- Flat button with ripple -->
+                          <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                            信用卡
+                          </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <button id="demo-show-toast" class="mdl-button mdl-js-button mdl-button--raised mycartbutton" type="button">立即购买</button>
+                <div id="demo-toast-example" class="mdl-js-snackbar mdl-snackbar">
+                  <div class="mdl-snackbar__text"></div>
+                  <button class="mdl-snackbar__action" type="button"></button>
+                </div>
+                <button id="demo-show-toast2" class="mdl-button mdl-js-button mdl-button--raised mycartbutton" type="button">加入购物车</button>
+                <div id="demo-toast-example2" class="mdl-js-snackbar mdl-snackbar">
+                  <div class="mdl-snackbar__text"></div>
+                  <button class="mdl-snackbar__action" type="button"></button>
+                </div>
+                <script>
+                  (function() {
+                    'use strict';
+                    window['counter'] = 0;
+                    var snackbarContainer = document.querySelector('#demo-toast-example');
+                    var showToastButton = document.querySelector('#demo-show-toast');
+                    showToastButton.addEventListener('click', function() {
+                      'use strict';
+                      var data = {message: '恭喜你购买成功'};
+                      snackbarContainer.MaterialSnackbar.showSnackbar(data);
+                    });
+                  }());
+                  (function() {
+                    'use strict';
+                    window['counter'] = 0;
+                    var snackbarContainer = document.querySelector('#demo-toast-example2');
+                    var showToastButton = document.querySelector('#demo-show-toast2');
+                    showToastButton.addEventListener('click', function() {
+                      'use strict';
+                      var data = {message: '恭喜你成功加入购物车'};
+                      snackbarContainer.MaterialSnackbar.showSnackbar(data);
+                    });
+                  }());
+                </script>
+
+              </div>
+              <div class="mdl-cell mdl-cell--2-col">
+                <div class="demo-card-square mdl-card mdl-shadow--2dp" id="mypagelittlecards">
+                    <div class="mdl-card__title mdl-card--expand">
+                        <h2 class="mdl-card__title-text">促销广告</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        欢乐水果节
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="promotion.html">
+                  查看详情
+                </a>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <footer class="mdl-mega-footer">
+            <div class="mdl-mega-footer__middle-section">
+
+                <div class="mdl-mega-footer__drop-down-section">
+                    <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                    <h1 class="mdl-mega-footer__heading">网站开发框架</h1>
+                    <ul class="mdl-mega-footer__link-list">
+                        <li><a href="#">Material Design</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="mdl-mega-footer__drop-down-section">
+                    <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                    <h1 class="mdl-mega-footer__heading">作者</h1>
+                    <ul class="mdl-mega-footer__link-list">
+                        <li><a href="#">16905214</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="mdl-mega-footer__drop-down-section">
+                    <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                    <h1 class="mdl-mega-footer__heading">联系方式</h1>
+                    <ul class="mdl-mega-footer__link-list">
+                        <li><a href="#">158-5829-8995</a></li>
+                        <li><a href="#">icemax@gmail.com</a></li>
+                        <li><a href="#">16905214@hdu.edu.cn</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="mdl-mega-footer__drop-down-section">
+                    <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                    <h1 class="mdl-mega-footer__heading">技术交流</h1>
+                    <ul class="mdl-mega-footer__link-list">
+                        <li><a href="#">QQ:1137574126</a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="mdl-mega-footer__bottom-section">
+                <div class="mdl-logo">仅用于学习/不用于任何商业运作</div>
+
+            </div>
+
+        </footer>
+    </div>
+</body>
+
+</html>
